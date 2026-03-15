@@ -1,24 +1,16 @@
-Te lo armé **listo para Markdown / GitHub / informe**, con:
-
-* **Índice**
-* **banners**
-* **imágenes externas**
-* **secciones ordenadas**
-* **uno que menciona ITS Villada**
-
-Podés copiarlo directamente.
-
----
-
 <p align="center">
   <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Machine Learning Banner">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Machine%20Learning-Dataset-blue">
-  <img src="https://img.shields.io/badge/Cybersecurity-Network%20Analysis-red">
-  <img src="https://img.shields.io/badge/Dataset-MalFlow-green">
-  <img src="https://img.shields.io/badge/Institucion-ITS%20Villada-orange">
+
+<img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Machine%20Learning-Model-green?logo=tensorflow&logoColor=white">
+<img src="https://img.shields.io/badge/Dataset-MalFlow-orange?logo=databricks&logoColor=white">
+<img src="https://img.shields.io/badge/Platform-Kaggle-20BEFF?logo=kaggle&logoColor=white">
+<img src="https://img.shields.io/badge/Area-Cybersecurity-red?logo=hackthebox&logoColor=white">
+<img src="https://img.shields.io/badge/Institucion-ITS%20Villada-purple">
+
 </p>
 
 ---
@@ -47,27 +39,31 @@ Podés copiarlo directamente.
 
 # 🔸 Introducción
 
-En el campo de la **ciencia de datos y la ciberseguridad**, los datasets cumplen un rol fundamental para entrenar modelos de **Machine Learning** capaces de identificar patrones dentro de grandes volúmenes de información.
+En el campo de la **ciencia de datos y la ciberseguridad**, los datasets representan una herramienta fundamental para entrenar modelos de **Machine Learning** capaces de identificar patrones dentro de grandes volúmenes de información.
 
-El análisis de tráfico de red permite detectar comportamientos anómalos, identificar posibles amenazas y mejorar los sistemas de seguridad dentro de infraestructuras informáticas modernas.
+El análisis del tráfico de red permite detectar comportamientos anómalos, identificar posibles amenazas y mejorar los sistemas de seguridad dentro de infraestructuras informáticas modernas.
 
-En esta actividad se analiza el dataset **MalFlow**, el cual contiene información sobre **flujos de tráfico de red** generados por diferentes tipos de comunicación dentro de una red. A partir de este conjunto de datos es posible entrenar modelos de aprendizaje automático capaces de diferenciar entre **tráfico normal y tráfico potencialmente malicioso**.
+En esta actividad se analiza el dataset **MalFlow**, el cual contiene información sobre flujos de tráfico de red generados por distintas comunicaciones dentro de una red.
+
+A partir de estos datos es posible entrenar modelos de aprendizaje automático capaces de diferenciar entre **tráfico legítimo y tráfico potencialmente malicioso**, permitiendo desarrollar sistemas de detección automatizada de amenazas.
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070&auto=format&fit=crop" width="100%" alt="AI dataset analysis">
+  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070&auto=format&fit=crop" width="100%">
 </p>
 
 ---
 
 # 🔸 Objetivo
 
-El objetivo de este trabajo es analizar cómo podría utilizarse un dataset de tráfico de red para entrenar un modelo de **Machine Learning**, evaluando:
+El objetivo de este trabajo es analizar cómo puede utilizarse un dataset de tráfico de red para entrenar un modelo de **Machine Learning**, evaluando diferentes aspectos del proceso de aprendizaje automático.
 
-* Qué tipo de problema de predicción se podría resolver con estos datos.
-* Qué tipo de algoritmo de aprendizaje automático sería adecuado.
-* Qué variables o **features** resultan más relevantes para detectar patrones dentro del tráfico de red.
+Entre los puntos principales se encuentran:
 
-Este análisis permite comprender cómo los datasets pueden utilizarse para desarrollar sistemas de **detección automática de amenazas en redes informáticas**.
+* Analizar qué tipo de predicción puede realizarse utilizando el dataset.
+* Identificar qué tipo de algoritmo de Machine Learning resulta más adecuado.
+* Determinar qué variables o **features** aportan mayor información para detectar patrones dentro del tráfico de red.
+
+Este análisis permite comprender cómo los datos pueden utilizarse para construir sistemas capaces de **detectar amenazas informáticas dentro de redes digitales**.
 
 <p align="center">
   <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
@@ -77,13 +73,14 @@ Este análisis permite comprender cómo los datasets pueden utilizarse para desa
 
 # 🔹 Dataset Analizado
 
-El dataset utilizado en esta actividad es **MalFlow**, el cual puede encontrarse en la plataforma Kaggle:
+El dataset analizado en esta actividad es **MalFlow**, disponible en la plataforma Kaggle.
 
+🔗 Link del dataset
 [https://www.kaggle.com/datasets/amester/malflow](https://www.kaggle.com/datasets/amester/malflow)
 
-Este dataset contiene información sobre **flujos de tráfico de red**, donde cada registro representa una conexión entre dispositivos dentro de una red.
+Este dataset contiene información sobre **flujos de tráfico de red**, donde cada registro representa una conexión entre dispositivos dentro de una red informática.
 
-Entre los datos registrados se incluyen características como:
+Entre las características registradas se incluyen:
 
 * duración de la conexión
 * cantidad de paquetes transmitidos
@@ -91,10 +88,10 @@ Entre los datos registrados se incluyen características como:
 * puertos de origen y destino
 * protocolo de comunicación
 
-Estas variables permiten describir el comportamiento de cada flujo de red, lo que facilita el análisis de patrones de comunicación dentro de un sistema.
+Estas variables permiten describir el comportamiento de cada conexión dentro de la red, lo que facilita el análisis de patrones de comunicación entre sistemas.
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Cybersecurity network">
+  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop" width="100%">
 </p>
 
 ---
@@ -103,9 +100,11 @@ Estas variables permiten describir el comportamiento de cada flujo de red, lo qu
 
 Si se entrenara un modelo utilizando este dataset, el objetivo principal sería **predecir si un flujo de tráfico de red corresponde a actividad maliciosa o a tráfico legítimo**.
 
-El modelo analizaría las características presentes en cada registro del dataset para identificar patrones que indiquen comportamientos sospechosos dentro de la red.
+El modelo analizaría las diferentes características presentes en cada registro del dataset para identificar patrones que indiquen comportamientos sospechosos dentro de la red.
 
-Este tipo de problema se conoce como **clasificación**, ya que el modelo debe asignar cada flujo de red a una categoría determinada. En algunos casos también podría plantearse como un problema de **clasificación multiclase**, donde además de detectar tráfico malicioso se identifica el tipo específico de comportamiento o amenaza presente en la comunicación.
+Este problema se clasifica como un **problema de clasificación**, ya que el modelo debe asignar cada flujo de red a una categoría específica.
+
+Dependiendo de la estructura del dataset, también podría abordarse como un problema de **clasificación multiclase**, donde además de detectar tráfico malicioso se identifica el tipo específico de amenaza presente en la comunicación.
 
 <p align="center">
   <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
@@ -115,9 +114,9 @@ Este tipo de problema se conoce como **clasificación**, ya que el modelo debe a
 
 # 🔸 ¿Qué tipo de Machine Learning utilizaría?
 
-Para resolver este problema se utilizaría **Machine Learning supervisado**, debido a que el dataset contiene datos etiquetados que indican si el tráfico corresponde a una actividad normal o maliciosa.
+Para resolver este problema se utilizaría **Machine Learning supervisado**, debido a que el dataset contiene registros previamente etiquetados que indican si el tráfico corresponde a actividad normal o maliciosa.
 
-En este enfoque, el modelo aprende a partir de ejemplos previamente clasificados, identificando relaciones entre las variables del dataset y la categoría asociada a cada registro.
+En este enfoque, el modelo aprende a partir de ejemplos previamente clasificados, identificando relaciones entre las variables del dataset y su clasificación.
 
 Entre los algoritmos más adecuados para este tipo de problema se encuentran:
 
@@ -126,19 +125,19 @@ Entre los algoritmos más adecuados para este tipo de problema se encuentran:
 * **Decision Trees**
 * **Support Vector Machines**
 
-Estos modelos son especialmente efectivos al trabajar con **datos tabulares**, ya que permiten detectar patrones complejos y relaciones entre múltiples variables sin requerir transformaciones excesivas de los datos.
+Estos algoritmos son especialmente eficaces al trabajar con **datos tabulares**, ya que permiten capturar relaciones complejas entre múltiples variables y manejar grandes volúmenes de datos de manera eficiente.
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Machine learning technology">
+  <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=2070&auto=format&fit=crop" width="100%">
 </p>
 
 ---
 
 # 🔸 ¿Qué features serían más útiles?
 
-Las **features** más relevantes dentro de este dataset serían aquellas que describen el comportamiento del flujo de red y la interacción entre dispositivos dentro de la infraestructura.
+Las **features** más relevantes dentro de este dataset son aquellas que describen el comportamiento del flujo de red y la interacción entre dispositivos dentro de la infraestructura.
 
-Entre las variables más importantes se destacan:
+Entre las variables más importantes se encuentran:
 
 * **Duración de la conexión**
 * **Cantidad de paquetes transmitidos**
@@ -146,9 +145,9 @@ Entre las variables más importantes se destacan:
 * **Puertos de origen y destino**
 * **Protocolo de red utilizado**
 
-Estas características permiten identificar patrones asociados al tráfico malicioso, ya que muchas amenazas generan **comportamientos anómalos dentro de la red**, como conexiones repetitivas hacia servidores externos, uso de puertos poco comunes o transferencias de datos inusuales.
+Estas características permiten identificar patrones asociados al tráfico malicioso, ya que muchos tipos de malware generan **comportamientos anómalos dentro de la red**, como conexiones repetitivas hacia servidores externos, uso de puertos poco comunes o transferencias de datos inusuales.
 
-Gracias al análisis de estas variables, un modelo de Machine Learning puede aprender a distinguir entre tráfico normal y comportamientos potencialmente peligrosos.
+El análisis de estas variables permite entrenar modelos capaces de detectar **comportamientos sospechosos dentro de una red informática**.
 
 <p align="center">
   <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
@@ -158,28 +157,20 @@ Gracias al análisis de estas variables, un modelo de Machine Learning puede apr
 
 # 🔸 Conclusión
 
-El análisis del dataset **MalFlow** demuestra cómo los datos de tráfico de red pueden utilizarse para entrenar modelos de **Machine Learning orientados a la detección de amenazas en redes informáticas**.
+El análisis del dataset **MalFlow** demuestra cómo los datos de tráfico de red pueden utilizarse para entrenar modelos de **Machine Learning orientados a la detección de amenazas dentro de redes informáticas**.
 
-A través del uso de algoritmos de clasificación supervisada y del análisis de variables relacionadas con el comportamiento de las conexiones, es posible desarrollar sistemas capaces de identificar patrones anómalos y detectar actividades potencialmente maliciosas.
+Mediante el uso de algoritmos de clasificación supervisada y el análisis de variables relacionadas con el comportamiento de las conexiones, es posible desarrollar sistemas capaces de identificar patrones anómalos y detectar actividades potencialmente maliciosas.
 
-Este tipo de técnicas representa una herramienta fundamental dentro del campo de la **ciberseguridad moderna**, ya que permite automatizar procesos de análisis y mejorar la capacidad de respuesta ante posibles incidentes dentro de una infraestructura de red.
+Este tipo de enfoques representa una herramienta clave dentro del campo de la **ciberseguridad moderna**, permitiendo automatizar procesos de análisis y mejorar la capacidad de respuesta ante incidentes de seguridad.
 
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Trabajo%20Academico-ITS%20Villada-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Trabajo%20Academico-ITS%20Villada-blue?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Data science and cybersecurity">
+  <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2070&auto=format&fit=crop" width="100%">
 </p>
 
----
 
-✅ Si querés, también puedo hacer una **versión mucho más pro estilo README de GitHub (10/10)** con:
-
-* badges de **Python / ML / Dataset**
-* diagramas de **cómo entrenar el modelo**
-* sección **Metodología**
-* **pipeline de Machine Learning**
-* y que quede **MUY profesional para presentar en ITS Villada**.
