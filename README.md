@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Machine Learning Banner">
+  <img src="https://i.imgur.com/fFnG9fe.png" width="100%">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Trabajo%20Academico-ITS%20Villada-blue?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -9,11 +13,11 @@
 <img src="https://img.shields.io/badge/Dataset-MalFlow-orange?logo=databricks&logoColor=white">
 <img src="https://img.shields.io/badge/Platform-Kaggle-20BEFF?logo=kaggle&logoColor=white">
 <img src="https://img.shields.io/badge/Area-Cybersecurity-red?logo=hackthebox&logoColor=white">
-<img src="https://img.shields.io/badge/Institucion-ITS%20Villada-purple">
+
 
 </p>
 
----
+
 
 <p align="center">
   <img src="https://i.imgur.com/RVGaecC.png" width="100%">
@@ -24,12 +28,16 @@
 # 📘 Índice
 
 [Introducción](#-introducción)
+
 [Objetivo](#-objetivo)
+
 [Dataset Analizado](#-dataset-analizado)
+
 [¿Qué predeciría el modelo?](#-qué-predeciría-el-modelo)
+
 [Tipo de Machine Learning](#-qué-tipo-de-machine-learning-utilizaría)
+
 [Features más relevantes](#-qué-features-serían-más-útiles)
-[Conclusión](#-conclusión)
 
 </div>
 
@@ -47,11 +55,11 @@ En esta actividad se analiza el dataset **MalFlow**, el cual contiene informaci�
 
 A partir de estos datos es posible entrenar modelos de aprendizaje automático capaces de diferenciar entre **tráfico legítimo y tráfico potencialmente malicioso**, permitiendo desarrollar sistemas de detección automatizada de amenazas.
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070&auto=format&fit=crop" width="100%">
-</p>
 
----
+
+<p align="center">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+</p>
 
 # 🔸 Objetivo
 
@@ -65,11 +73,11 @@ Entre los puntos principales se encuentran:
 
 Este análisis permite comprender cómo los datos pueden utilizarse para construir sistemas capaces de **detectar amenazas informáticas dentro de redes digitales**.
 
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
-</p>
 
----
+
+<p align="center">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+</p>
 
 # 🔹 Dataset Analizado
 
@@ -90,11 +98,10 @@ Entre las características registradas se incluyen:
 
 Estas variables permiten describir el comportamiento de cada conexión dentro de la red, lo que facilita el análisis de patrones de comunicación entre sistemas.
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop" width="100%">
-</p>
 
----
+<p align="center">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+</p>
 
 # 🔸 ¿Qué predeciría el modelo?
 
@@ -106,11 +113,11 @@ Este problema se clasifica como un **problema de clasificación**, ya que el mod
 
 Dependiendo de la estructura del dataset, también podría abordarse como un problema de **clasificación multiclase**, donde además de detectar tráfico malicioso se identifica el tipo específico de amenaza presente en la comunicación.
 
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
-</p>
 
----
+
+<p align="center">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+</p>
 
 # 🔸 ¿Qué tipo de Machine Learning utilizaría?
 
@@ -127,11 +134,11 @@ Entre los algoritmos más adecuados para este tipo de problema se encuentran:
 
 Estos algoritmos son especialmente eficaces al trabajar con **datos tabulares**, ya que permiten capturar relaciones complejas entre múltiples variables y manejar grandes volúmenes de datos de manera eficiente.
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=2070&auto=format&fit=crop" width="100%">
-</p>
 
----
+
+<p align="center">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+</p>
 
 # 🔸 ¿Qué features serían más útiles?
 
@@ -149,28 +156,13 @@ Estas características permiten identificar patrones asociados al tráfico malic
 
 El análisis de estas variables permite entrenar modelos capaces de detectar **comportamientos sospechosos dentro de una red informática**.
 
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
-</p>
 
----
 
-# 🔸 Conclusión
-
-El análisis del dataset **MalFlow** demuestra cómo los datos de tráfico de red pueden utilizarse para entrenar modelos de **Machine Learning orientados a la detección de amenazas dentro de redes informáticas**.
-
-Mediante el uso de algoritmos de clasificación supervisada y el análisis de variables relacionadas con el comportamiento de las conexiones, es posible desarrollar sistemas capaces de identificar patrones anómalos y detectar actividades potencialmente maliciosas.
-
-Este tipo de enfoques representa una herramienta clave dentro del campo de la **ciberseguridad moderna**, permitiendo automatizar procesos de análisis y mejorar la capacidad de respuesta ante incidentes de seguridad.
-
----
 
 <p align="center">
-<img src="https://img.shields.io/badge/Trabajo%20Academico-ITS%20Villada-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/By_Bruno_Segura-blue?style=for-the-badge">
 </p>
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2070&auto=format&fit=crop" width="100%">
-</p>
+
 
 
