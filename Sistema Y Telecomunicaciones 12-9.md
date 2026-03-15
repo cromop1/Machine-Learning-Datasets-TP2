@@ -1,270 +1,185 @@
-<p align="center">
-  <img src="https://i.imgur.com/cKPuyVG.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-<p align="center">
-  <img src="https://i.imgur.com/RVGaecC.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
+Te lo armé **listo para Markdown / GitHub / informe**, con:
 
+* **Índice**
+* **banners**
+* **imágenes externas**
+* **secciones ordenadas**
+* **uno que menciona ITS Villada**
 
+Podés copiarlo directamente.
 
-
-
-
-
-<p align="center">
-  <img src="https://i.imgur.com/BBMgp0q.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
+---
 
 <p align="center">
-  <img src="https://custom-icon-badges.demolab.com/badge/Contribuidores-4-6F42C1.svg?logo=people&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Entorno-Produccion-FD7E14.svg?logo=gear&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Repo-GitHub-181717.svg?logo=github&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Status-Finalizado-28A745.svg?logo=check-circle&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Raspberry%20Pi-CC0000.svg?logo=raspberrypi&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Router-0078D7.svg?logo=router&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Configuracion inicial-008000.svg?logo=network&logoColor=white">
+  <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Machine Learning Banner">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Machine%20Learning-Dataset-blue">
+  <img src="https://img.shields.io/badge/Cybersecurity-Network%20Analysis-red">
+  <img src="https://img.shields.io/badge/Dataset-MalFlow-green">
+  <img src="https://img.shields.io/badge/Institucion-ITS%20Villada-orange">
+</p>
 
+---
 
 <p align="center">
-  <img src="https://i.imgur.com/RVGaecC.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://i.imgur.com/RVGaecC.png" width="100%">
 </p>
 
 <div align="center">
 
-## 📘 Índice
+# 📘 Índice
 
- [Introducción](#-introducción)  
- [Objetivo](#-objetivo)  
- [Desarrollo](#3-desarrollo)  
-    [3.1 Kit utilizado](#31-kit-utilizado)  
-    [3.2 Preparación de la Raspberry Pi](#32-preparación-de-la-raspberry-pi)  
-      [3.2.1 Eliminación de la ISO anterior](#321-eliminación-de-la-iso-anterior)  
-      [3.2.2 Instalación de la nueva ISO](#322-instalación-de-la-nueva-iso)  
-      [3.2.3 Configuración inicial](#323-configuración-inicial)  
-    [3.3 Acceso remoto mediante SSH](#33-acceso-remoto-mediante-ssh)  
- [Conclusión](#-conclusión)
+[Introducción](#-introducción)
+[Objetivo](#-objetivo)
+[Dataset Analizado](#-dataset-analizado)
+[¿Qué predeciría el modelo?](#-qué-predeciría-el-modelo)
+[Tipo de Machine Learning](#-qué-tipo-de-machine-learning-utilizaría)
+[Features más relevantes](#-qué-features-serían-más-útiles)
+[Conclusión](#-conclusión)
 
 </div>
 
-
 <p align="center">
-  <img src="https://i.imgur.com/RVGaecC.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://i.imgur.com/RVGaecC.png" width="100%">
 </p>
-
-
 
 # 🔸 Introducción
 
-En esta actividad comenzamos el proceso para convertir una Raspberry Pi 3 en un router educativo, capaz de gestionar una red local aislada mediante servicios de red como DHCP y SSH.
-Este trabajo busca preparar el dispositivo para que pueda asignar direcciones IP, permitir acceso remoto y administrar la comunicación entre los equipos conectados a un switch, simulando así el funcionamiento básico de un router real.
+En el campo de la **ciencia de datos y la ciberseguridad**, los datasets cumplen un rol fundamental para entrenar modelos de **Machine Learning** capaces de identificar patrones dentro de grandes volúmenes de información.
 
-Para lograrlo, primero se realiza la instalación del sistema operativo, la configuración inicial del entorno y la habilitación de acceso remoto. Esto sienta las bases para tareas más avanzadas en etapas posteriores.
- 
+El análisis de tráfico de red permite detectar comportamientos anómalos, identificar posibles amenazas y mejorar los sistemas de seguridad dentro de infraestructuras informáticas modernas.
+
+En esta actividad se analiza el dataset **MalFlow**, el cual contiene información sobre **flujos de tráfico de red** generados por diferentes tipos de comunicación dentro de una red. A partir de este conjunto de datos es posible entrenar modelos de aprendizaje automático capaces de diferenciar entre **tráfico normal y tráfico potencialmente malicioso**.
+
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070&auto=format&fit=crop" width="100%" alt="AI dataset analysis">
 </p>
+
+---
 
 # 🔸 Objetivo
 
-El objetivo de este informe es preparar y configurar una Raspberry Pi 3 para su uso como router, logrando:
+El objetivo de este trabajo es analizar cómo podría utilizarse un dataset de tráfico de red para entrenar un modelo de **Machine Learning**, evaluando:
 
-Instalar correctamente un sistema operativo.
+* Qué tipo de problema de predicción se podría resolver con estos datos.
+* Qué tipo de algoritmo de aprendizaje automático sería adecuado.
+* Qué variables o **features** resultan más relevantes para detectar patrones dentro del tráfico de red.
 
-Realizar la configuración inicial del usuario y entorno.
-
-Manejar comandos fundamentales de Bash para administración del sistema.
-
-Habilitar el servicio SSH para permitir acceso remoto seguro.
-
-Establecer comunicación desde otra computadora hacia la Raspberry Pi.
+Este análisis permite comprender cómo los datasets pueden utilizarse para desarrollar sistemas de **detección automática de amenazas en redes informáticas**.
 
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
 </p>
 
-# 🔹3 Desarrollo
+---
+
+# 🔹 Dataset Analizado
+
+El dataset utilizado en esta actividad es **MalFlow**, el cual puede encontrarse en la plataforma Kaggle:
+
+[https://www.kaggle.com/datasets/amester/malflow](https://www.kaggle.com/datasets/amester/malflow)
+
+Este dataset contiene información sobre **flujos de tráfico de red**, donde cada registro representa una conexión entre dispositivos dentro de una red.
+
+Entre los datos registrados se incluyen características como:
+
+* duración de la conexión
+* cantidad de paquetes transmitidos
+* volumen de datos enviados y recibidos
+* puertos de origen y destino
+* protocolo de comunicación
+
+Estas variables permiten describir el comportamiento de cada flujo de red, lo que facilita el análisis de patrones de comunicación dentro de un sistema.
 
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Cybersecurity network">
 </p>
 
-## 🔹 3.1 Kit Utilizado
-####  - **Raspberry Pi 3**  
- ![imagen](Raspberry_Pi_3.jpg)
+---
 
+# 🔸 ¿Qué predeciría el modelo?
 
-####  - **Switch**  
-![imagen](Switch.png)
-####  - **Cable Ethernet**  
-![imagen](Cable_Ethernet.png)
-####  - **Fuente de alimentación** (para Switch y Raspberry Pi)  
-![imagen](Fuente_de_alimentación.png)
-####  - **MicroSD 16 GB**  Y  **Adaptador de microSD**  
- ![imagen](MicroSD.jpg)
+Si se entrenara un modelo utilizando este dataset, el objetivo principal sería **predecir si un flujo de tráfico de red corresponde a actividad maliciosa o a tráfico legítimo**.
 
-####  - **Teclado**
-  
-![imagen](Teclado.png)
+El modelo analizaría las características presentes en cada registro del dataset para identificar patrones que indiquen comportamientos sospechosos dentro de la red.
 
-####  - **Monitor**  
-![imagen](Monitor.png)
-
-
-
-
-
-## **3.2 Preparación de la Raspberry Pi**
+Este tipo de problema se conoce como **clasificación**, ya que el modelo debe asignar cada flujo de red a una categoría determinada. En algunos casos también podría plantearse como un problema de **clasificación multiclase**, donde además de detectar tráfico malicioso se identifica el tipo específico de comportamiento o amenaza presente en la comunicación.
 
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
 </p>
 
-### **3.2.1 Eliminación de la ISO anterior**
+---
+
+# 🔸 ¿Qué tipo de Machine Learning utilizaría?
+
+Para resolver este problema se utilizaría **Machine Learning supervisado**, debido a que el dataset contiene datos etiquetados que indican si el tráfico corresponde a una actividad normal o maliciosa.
+
+En este enfoque, el modelo aprende a partir de ejemplos previamente clasificados, identificando relaciones entre las variables del dataset y la categoría asociada a cada registro.
+
+Entre los algoritmos más adecuados para este tipo de problema se encuentran:
+
+* **Random Forest**
+* **Gradient Boosting**
+* **Decision Trees**
+* **Support Vector Machines**
+
+Estos modelos son especialmente efectivos al trabajar con **datos tabulares**, ya que permiten detectar patrones complejos y relaciones entre múltiples variables sin requerir transformaciones excesivas de los datos.
 
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Machine learning technology">
 </p>
 
-- Retirar la microSD de la Raspberry Pi.  
-- Insertarla en un adaptador y conectarla a la computadora.  
-- Borrar la ISO vieja o formatear la microSD.
+---
+
+# 🔸 ¿Qué features serían más útiles?
+
+Las **features** más relevantes dentro de este dataset serían aquellas que describen el comportamiento del flujo de red y la interacción entre dispositivos dentro de la infraestructura.
+
+Entre las variables más importantes se destacan:
+
+* **Duración de la conexión**
+* **Cantidad de paquetes transmitidos**
+* **Cantidad de bytes enviados y recibidos**
+* **Puertos de origen y destino**
+* **Protocolo de red utilizado**
+
+Estas características permiten identificar patrones asociados al tráfico malicioso, ya que muchas amenazas generan **comportamientos anómalos dentro de la red**, como conexiones repetitivas hacia servidores externos, uso de puertos poco comunes o transferencias de datos inusuales.
+
+Gracias al análisis de estas variables, un modelo de Machine Learning puede aprender a distinguir entre tráfico normal y comportamientos potencialmente peligrosos.
 
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://i.imgur.com/zDTIHyR.png" width="100%">
 </p>
 
-### **3.2.2 Instalación de la nueva ISO**
-
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-
-1. Descargar el instalador oficial desde:  
-   https://www.raspberrypi.com/software/
-
-2. En el programa seleccionar:  
-   - **Dispositivo:** Raspberry Pi 3  
-   - **Sistema operativo:** Arquitectura de 64 bits  
-   - **Destino:** microSD  
-
-3. Esperar a que finalice la instalación.  
-4. Expulsar la tarjeta e insertarla nuevamente en la Raspberry Pi.
-
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-
-### **3.2.3 Configuración inicial**
-
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-
-Conectar:
-
-- MicroSD  
-- Monitor  
-- Teclado  
-- Fuente de alimentación  
-
-Luego:
-
-1. Encender la Raspberry Pi.  
-2. Iniciar sesión con:  
-   - **Usuario:** `grupo6`  
-   - **Contraseña:** `123`
-
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-
-## **3.3 Acceso remoto mediante SSH**
-
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-
-### **🔹 Activación del servicio SSH**
-
-En la Raspberry Pi ejecutar:
-
-```bash
-sudo systemctl enable ssh
-sudo systemctl start ssh
-```
-
-enable → lo activa en cada reinicio
-
-start → lo enciende en ese momento
-
-### 🔹 Obtención de la dirección IP
-
-Ejecutar:
-```bash
-hostname -I
-```
-Esto muestra la dirección IP de la Raspberry Pi dentro de la red local.
-
-
-
-### 🔹 Configuración del SSH en notebook (Linux)
-
-Para habilitar SSH en la notebook:
-```bash
-sudo apt-get install openssh-server
-```
-Luego activar el servicio:
-
-```bash
-sudo systemctl enable ssh
-```
-
-### 🔹 Conexión SSH desde la notebook
-
-Una vez conocida la IP, ejecutar:
-```bash
-ssh grupo6@<IP_de_Raspberry>
-```
-
-Ejemplo:
-```bash
-ssh grupo6@192.168.60.112
-```
-
-Esto inicia una sesión remota segura dentro de la Raspberry Pi.
-
-
-
-
-
-
-<p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
-</p>
-
-
+---
 
 # 🔸 Conclusión
 
+El análisis del dataset **MalFlow** demuestra cómo los datos de tráfico de red pueden utilizarse para entrenar modelos de **Machine Learning orientados a la detección de amenazas en redes informáticas**.
+
+A través del uso de algoritmos de clasificación supervisada y del análisis de variables relacionadas con el comportamiento de las conexiones, es posible desarrollar sistemas capaces de identificar patrones anómalos y detectar actividades potencialmente maliciosas.
+
+Este tipo de técnicas representa una herramienta fundamental dentro del campo de la **ciberseguridad moderna**, ya que permite automatizar procesos de análisis y mejorar la capacidad de respuesta ante posibles incidentes dentro de una infraestructura de red.
+
+---
+
 <p align="center">
-  <img src="https://i.imgur.com/zDTIHyR.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://img.shields.io/badge/Trabajo%20Academico-ITS%20Villada-blue?style=for-the-badge">
 </p>
 
-La preparación inicial de la Raspberry Pi 3 sienta la base para convertir el dispositivo en un router educativo funcional.
-Gracias a la instalación correcta del sistema operativo, la configuración básica y la habilitación del acceso SSH, se obtuvo una Raspberry Pi completamente operativa y accesible remotamente.
-
-
-
 <p align="center">
-  <img src="https://i.imgur.com/iPxDSQA.png" width="100%" alt="Banner Proyecto Integrador 2025">
+  <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2070&auto=format&fit=crop" width="100%" alt="Data science and cybersecurity">
 </p>
 
+---
 
+✅ Si querés, también puedo hacer una **versión mucho más pro estilo README de GitHub (10/10)** con:
 
-
-
-
-
-
+* badges de **Python / ML / Dataset**
+* diagramas de **cómo entrenar el modelo**
+* sección **Metodología**
+* **pipeline de Machine Learning**
+* y que quede **MUY profesional para presentar en ITS Villada**.
